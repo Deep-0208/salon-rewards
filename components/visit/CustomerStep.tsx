@@ -66,7 +66,7 @@ export default function CustomerStep({ initialData, onContinue }: CustomerStepPr
   const canContinue = phone.length === 10 && (customer !== null || isNewCustomer);
 
   return (
-    <div className="flex-1 flex flex-col p-[var(--spacing-md)] animate-fade-in">
+    <div className="flex-1 flex flex-col p-[var(--spacing-md)] pb-[120px] animate-fade-in">
       <div className="mb-[var(--spacing-xl)]">
         <label htmlFor="phone-input" className="block text-[13px] font-medium text-text-secondary mb-[var(--spacing-xs)]">
           Customer Mobile Number
@@ -188,8 +188,9 @@ export default function CustomerStep({ initialData, onContinue }: CustomerStepPr
         </div>
       )}
 
-      <div className="mt-auto pt-[var(--spacing-xl)]">
-        <button
+      <div className="fixed bottom-0 left-0 right-0 p-[var(--spacing-md)] pb-[calc(var(--spacing-md)+env(safe-area-inset-bottom,0px))] bg-bg/80 backdrop-blur-md border-t border-border/50 z-10">
+        <div className="max-w-[768px] mx-auto w-full">
+          <button
           type="button"
           disabled={!canContinue}
           onClick={() => {
@@ -214,7 +215,8 @@ export default function CustomerStep({ initialData, onContinue }: CustomerStepPr
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
           )}
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   );

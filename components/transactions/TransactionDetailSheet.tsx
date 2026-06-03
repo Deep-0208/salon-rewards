@@ -116,7 +116,7 @@ export default function TransactionDetailSheet({
           </div>
           <button
             onClick={onClose}
-            className="w-[36px] h-[36px] rounded-full bg-bg flex items-center justify-center text-text-tertiary hover:text-text cursor-pointer transition-colors"
+            className="w-[44px] h-[44px] rounded-full bg-bg flex items-center justify-center text-text-tertiary hover:text-text cursor-pointer transition-colors"
             aria-label="Close"
           >
             <svg

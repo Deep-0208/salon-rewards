@@ -28,7 +28,7 @@ export default function VisitPage() {
       }
       const timer = setTimeout(() => {
         router.push("/dashboard");
-      }, 1500); // 1.5 seconds auto-redirect
+      }, 400); // 400ms auto-redirect
       return () => clearTimeout(timer);
     }
   }, [step, router]);
