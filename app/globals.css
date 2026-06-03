@@ -9,9 +9,9 @@
   --color-bg-elevated: #FFFFFF;
   --color-card: #FFFFFF;
   --color-text: #0F172A;
-  --color-text-secondary: #64748B;
-  --color-text-tertiary: #94A3B8;
-  --color-success: #10B981;
+  --color-text-secondary: #475569; /* Darkened for a11y contrast */
+  --color-text-tertiary: #64748B; /* Darkened for a11y contrast */
+  --color-success: #059669; /* Darkened for a11y contrast */
   --color-success-light: #ECFDF5;
   --color-warning: #F59E0B;
   --color-warning-light: #FFFBEB;

@@ -12,6 +12,14 @@ import EmptyState from "@/components/dashboard/EmptyState";
 // ── State type ──
 type DashboardState = "loading" | "empty" | "data";
 
+// ── Greeting helper ──
+function getGreeting(): string {
+  const hour = new Date().getHours();
+  if (hour < 12) return "Good morning";
+  if (hour < 17) return "Good afternoon";
+  return "Good evening";
+}
+
 export default function DashboardPage() {
   const router = useRouter();
   const [state, setState] = useState<DashboardState>("loading");
@@ -110,8 +118,11 @@ export default function DashboardPage() {
       <div className="flex-1 flex flex-col pb-[100px]">
         {/* Header */}
         <header className="px-[var(--spacing-md)] pt-[var(--spacing-xl)] pb-[var(--spacing-sm)]">
-          <h1 className="text-[28px] font-bold tracking-tight text-text">
-            Dashboard
+          <p className="text-[13px] font-medium text-text-tertiary mb-[2px]">
+            {getGreeting()} 👋
+          </p>
+          <h1 className="text-[28px] font-bold tracking-tight text-text leading-tight">
+            {shopName}
           </h1>
           <p className="text-[14px] text-text-secondary mt-[2px]">
             Track visits and rewards
@@ -179,13 +190,23 @@ export default function DashboardPage() {
       )}
 
       {/* Header */}
-      <header className="px-[var(--spacing-md)] pt-[var(--spacing-xl)] pb-[var(--spacing-sm)] animate-fade-in">
-        <h1 className="text-[28px] font-bold tracking-tight text-text">
-          Dashboard
-        </h1>
-        <p className="text-[14px] text-text-secondary mt-[2px]">
-          Track visits and rewards
-        </p>
+      <header className="px-[var(--spacing-md)] pt-[var(--spacing-md)] pb-[var(--spacing-sm)] animate-fade-in">
+        <div className="flex items-start justify-between">
+          <div>
+            <p className="text-[13px] font-medium text-text-tertiary mb-[2px]">
+              {getGreeting()} 👋
+            </p>
+            <h1 className="text-[26px] font-bold tracking-tight text-text leading-tight">
+              {shopName}
+            </h1>
+          </div>
+          <div className="text-right mt-[4px]">
+            <p className="text-[13px] font-semibold text-text-secondary">
+              {new Date().toLocaleDateString("en-IN", { weekday: "short", month: "short", day: "numeric" })}
+            </p>
+            <p className="text-[11px] text-text-tertiary mt-[1px]">Today</p>
+          </div>
+        </div>
       </header>
 
       {/* Metrics */}

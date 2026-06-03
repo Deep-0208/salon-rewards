@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3730A3"/>
+      <stop offset="50%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <radialGradient id="starGlow" cx="50%" cy="48%" r="52%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.9)"/>
+      <stop offset="60%" stop-color="rgba(220,215,255,0.6)"/>
+      <stop offset="100%" stop-color="rgba(167,139,250,0)"/>
+    </radialGradient>
+    <filter id="gf" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" ry="112" fill="url(#bg)"/>
+
+  <!-- Glow halo behind star -->
+  <ellipse cx="256" cy="248" rx="170" ry="155" fill="url(#starGlow)" filter="url(#gf)" opacity="0.55"/>
+
+  <!--
+    Rounded 5-pointed star via path (cubic bezier for soft rounded tips)
+    Centered at 256,256 — Outer R=172, Inner r=72
+    Points calculated with cos/sin, then bezier for rounded tips
+  -->
+  <path d="
+    M256,82
+    C260,82 271,108 278.5,126
+    L298,192
+    L362,192
+    C376,192 392,191 396,198
+    C400,205 389,216 380,223
+    L326,264
+    L348,330
+    C353,345 358,362 350,367
+    C342,372 328,362 318,354
+    L256,314
+    L194,354
+    C184,362 170,372 162,367
+    C154,362 159,345 164,330
+    L186,264
+    L132,223
+    C123,216 112,205 116,198
+    C120,191 136,192 150,192
+    L214,192
+    L233.5,126
+    C241,108 252,82 256,82Z
+  " fill="white" opacity="0.97"/>
+
+  <!-- 4-point sparkle — upper right -->
+  <g transform="translate(388,108) rotate(0)">
+    <path d="M0,-20 C2.5,-6 6,-2.5 20,0 C6,2.5 2.5,6 0,20 C-2.5,6 -6,2.5 -20,0 C-6,-2.5 -2.5,-6 0,-20Z"
+          fill="white" opacity="0.9"/>
+  </g>
+
+  <!-- 4-point sparkle — lower left -->
+  <g transform="translate(126,398)">
+    <path d="M0,-14 C1.7,-4 4,-1.7 14,0 C4,1.7 1.7,4 0,14 C-1.7,4 -4,1.7 -14,0 C-4,-1.7 -1.7,-4 0,-14Z"
+          fill="white" opacity="0.7"/>
+  </g>
+</svg>
