@@ -4,30 +4,37 @@
   --color-primary: #4F46E5;
   --color-primary-hover: #4338CA;
   --color-primary-light: #EEF2FF;
+  --color-primary-glow: rgba(79, 70, 229, 0.35);
   --color-bg: #F8FAFC;
+  --color-bg-elevated: #FFFFFF;
   --color-card: #FFFFFF;
-  --color-text: #111827;
-  --color-text-secondary: #6B7280;
-  --color-text-tertiary: #9CA3AF;
+  --color-text: #0F172A;
+  --color-text-secondary: #64748B;
+  --color-text-tertiary: #94A3B8;
   --color-success: #10B981;
   --color-success-light: #ECFDF5;
   --color-warning: #F59E0B;
+  --color-warning-light: #FFFBEB;
   --color-error: #EF4444;
   --color-error-light: #FEF2F2;
-  --color-border: #E5E7EB;
+  --color-border: #E2E8F0;
   --color-border-focus: #4F46E5;
-  --color-input-bg: #F9FAFB;
+  --color-input-bg: #F8FAFC;
+  --color-surface: #F1F5F9;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
-  --radius-input: 14px;
-  --radius-button: 16px;
-  --radius-card: 16px;
-  --radius-hero: 20px;
-  --radius-sheet: 20px;
+  /* Updated radii per spec */
+  --radius-input: 20px;
+  --radius-button: 20px;
+  --radius-card: 24px;
+  --radius-hero: 24px;
+  --radius-sheet: 32px;
 
-  /* Increased whitespace, strict 8px system */
+  /* Extended spacing scale: 4 / 8 / 12 / 16 / 24 / 32 */
+  --spacing-2xs: 4px;
   --spacing-xs: 8px;
+  --spacing-s: 12px;
   --spacing-sm: 16px;
   --spacing-md: 24px;
   --spacing-lg: 32px;
@@ -38,9 +45,11 @@
   --transition-normal: 200ms;
   --transition-slow: 250ms;
 
-  /* Soft, elegant shadows */
-  --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
-  --shadow-floating: 0 8px 32px -4px rgba(0, 0, 0, 0.08);
+  /* Layered soft shadows — no harsh borders */
+  --shadow-subtle: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.03);
+  --shadow-soft: 0 4px 16px -2px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-floating: 0 8px 32px -4px rgba(0, 0, 0, 0.1), 0 4px 8px -4px rgba(0, 0, 0, 0.04);
+  --shadow-hero: 0 8px 24px -4px rgba(79, 70, 229, 0.12), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
 }
 
 *,
@@ -75,6 +84,8 @@ body {
   outline-offset: 2px;
   border-radius: 4px;
 }
+
+/* ═══════════ ANIMATIONS ═══════════ */
 
 /* OTP shake animation */
 @keyframes shake {
@@ -145,7 +156,27 @@ body {
   animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Premium Skeleton Pulse */
+/* Premium Skeleton Shimmer */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-border) 0%,
+    #f1f5f9 40%,
+    #e8edf3 50%,
+    #f1f5f9 60%,
+    var(--color-border) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+  border-radius: 8px;
+}
+
+/* Legacy pulse fallback */
 @keyframes skeletonPulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
@@ -153,4 +184,33 @@ body {
 
 .animate-pulse-soft {
   animation: skeletonPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* FAB glow pulse */
+@keyframes fabGlow {
+  0%, 100% { box-shadow: 0 4px 16px rgba(79, 70, 229, 0.3); }
+  50% { box-shadow: 0 4px 24px rgba(79, 70, 229, 0.5); }
+}
+
+.animate-fab-glow {
+  animation: fabGlow 3s ease-in-out infinite;
+}
+
+/* ═══════════ SURFACE UTILITIES ═══════════ */
+
+.surface-card {
+  background: var(--color-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+}
+
+.surface-elevated {
+  background: var(--color-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-floating);
+}
+
+.surface-subtle {
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
 }

@@ -85,7 +85,7 @@ export default function BillingStep({ customer, services, rewardPercentage, maxR
     <div className="flex-1 flex flex-col p-[var(--spacing-md)] animate-fade-in relative pb-[120px]">
       
       {/* Bill Summary Card */}
-      <div className="bg-card border border-border/40 rounded-[var(--radius-card)] p-[var(--spacing-lg)] mb-[var(--spacing-md)] flex flex-col items-center justify-center shadow-sm">
+      <div className="bg-card rounded-[var(--radius-card)] p-[var(--spacing-lg)] mb-[var(--spacing-sm)] flex flex-col items-center justify-center shadow-[var(--shadow-soft)]">
         <p className="text-[11px] text-text-tertiary uppercase tracking-widest font-semibold mb-[var(--spacing-xs)]">FINAL PAY</p>
         <h2 className="text-[40px] font-bold text-primary leading-none tracking-tight flex items-start">
           <span className="text-[20px] mt-[4px] mr-[2px]">₹</span>
@@ -99,7 +99,7 @@ export default function BillingStep({ customer, services, rewardPercentage, maxR
       </div>
 
       {/* Rewards Card */}
-      <div className="bg-card border border-border/40 rounded-[var(--radius-card)] p-[var(--spacing-md)] mb-[var(--spacing-md)] shadow-sm">
+      <div className="bg-card rounded-[var(--radius-card)] p-[var(--spacing-md)] mb-[var(--spacing-sm)] shadow-[var(--shadow-soft)]">
         <div className="flex flex-col gap-[var(--spacing-md)]">
           <div className="flex items-start justify-between">
             <div className="flex items-center gap-[12px]">
@@ -138,13 +138,13 @@ export default function BillingStep({ customer, services, rewardPercentage, maxR
                   }
                 }
               }}
-              className="w-full h-[64px] pl-[40px] pr-[16px] bg-input-bg border-2 border-border/60 focus:border-primary focus:ring-4 focus:ring-primary/10 rounded-[var(--radius-input)] text-[28px] font-bold outline-none transition-all tabular-nums"
+              className="w-full h-[64px] pl-[40px] pr-[16px] bg-surface border-2 border-border/40 focus:border-primary focus:shadow-[0_0_0_3px_rgba(79,70,229,0.1)] rounded-[var(--radius-input)] text-[28px] font-bold outline-none transition-all tabular-nums"
             />
           </div>
         </div>
         
         {/* Reward Earned Preview */}
-        <div className="mt-[var(--spacing-md)] pt-[var(--spacing-sm)] border-t border-border/40 flex justify-between items-center">
+        <div className="mt-[var(--spacing-sm)] pt-[var(--spacing-sm)] border-t border-border/20 flex justify-between items-center">
           <div>
             <p className="text-[13px] text-text-secondary font-medium">Earn Today</p>
             <p className="text-[11px] text-text-tertiary">{Math.round(rewardPercentage * 100)}% of Final Pay</p>
@@ -161,13 +161,13 @@ export default function BillingStep({ customer, services, rewardPercentage, maxR
       {/* Payment Method */}
       <div className="mb-[var(--spacing-lg)]">
         <p className="text-[12px] text-text-tertiary font-semibold uppercase tracking-wider mb-[var(--spacing-sm)] pl-[4px]">Payment Method</p>
-        <div className="flex bg-input-bg border border-border/40 rounded-[var(--radius-input)] p-[4px] gap-1">
+        <div className="flex bg-surface rounded-[var(--radius-input)] p-[4px] gap-1">
           <button
             type="button"
             onClick={() => setPaymentMethod("cash")}
             className={`
-              flex-1 flex items-center justify-center gap-[8px] min-h-[56px] rounded-[10px] transition-all cursor-pointer
-              ${paymentMethod === "cash" ? "bg-primary text-white shadow-[0_4px_12px_rgba(79,70,229,0.2)] font-semibold" : "text-text-secondary hover:bg-black/5"}
+              flex-1 flex items-center justify-center gap-[8px] min-h-[56px] rounded-[16px] transition-all cursor-pointer
+              ${paymentMethod === "cash" ? "bg-primary text-white shadow-[0_4px_16px_rgba(79,70,229,0.25)] font-semibold" : "text-text-secondary hover:bg-black/5"}
             `}
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -181,8 +181,8 @@ export default function BillingStep({ customer, services, rewardPercentage, maxR
             type="button"
             onClick={() => setPaymentMethod("online")}
             className={`
-              flex-1 flex items-center justify-center gap-[8px] min-h-[56px] rounded-[10px] transition-all cursor-pointer
-              ${paymentMethod === "online" ? "bg-primary text-white shadow-[0_4px_12px_rgba(79,70,229,0.2)] font-semibold" : "text-text-secondary hover:bg-black/5"}
+              flex-1 flex items-center justify-center gap-[8px] min-h-[56px] rounded-[16px] transition-all cursor-pointer
+              ${paymentMethod === "online" ? "bg-primary text-white shadow-[0_4px_16px_rgba(79,70,229,0.25)] font-semibold" : "text-text-secondary hover:bg-black/5"}
             `}
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -198,12 +198,12 @@ export default function BillingStep({ customer, services, rewardPercentage, maxR
       </div>
 
       {/* Sticky Bottom Action */}
-      <div className="fixed bottom-0 left-0 right-0 p-[var(--spacing-md)] pb-[calc(var(--spacing-md)+env(safe-area-inset-bottom,0px))] bg-card border-t border-border/50 shadow-[0_-8px_32px_rgba(0,0,0,0.08)] z-10">
+      <div className="fixed bottom-0 left-0 right-0 p-[var(--spacing-md)] pb-[calc(var(--spacing-md)+env(safe-area-inset-bottom,0px))] bg-card/90 backdrop-blur-xl border-t border-border/20 shadow-[0_-8px_32px_rgba(0,0,0,0.08)] z-10">
         <button
           type="button"
           disabled={isSaving}
           onClick={handleCompleteClick}
-          className="w-full min-h-[56px] bg-primary text-white font-semibold rounded-[var(--radius-button)] disabled:opacity-80 active:scale-95 transition-all cursor-pointer shadow-[0_4px_12px_rgba(24,23,21,0.15)] flex items-center justify-center gap-[8px]"
+          className="w-full min-h-[56px] bg-primary text-white font-semibold text-[16px] rounded-[var(--radius-button)] disabled:opacity-80 active:scale-[0.97] transition-all cursor-pointer shadow-[0_4px_16px_rgba(79,70,229,0.3)] flex items-center justify-center gap-[8px]"
         >
           {isSaving ? (
             <>
@@ -256,7 +256,7 @@ export default function BillingStep({ customer, services, rewardPercentage, maxR
                       setOtpError(false);
                     }}
                     maxLength={4}
-                    className={`w-full h-[64px] bg-input-bg border-2 ${otpError ? 'border-error text-error animate-shake' : 'border-border focus:border-primary'} rounded-[var(--radius-input)] text-center text-[24px] font-bold tracking-[1em] outline-none transition-colors`}
+                    className={`w-full h-[64px] bg-surface border-2 ${otpError ? 'border-error text-error animate-shake' : 'border-border/40 focus:border-primary'} rounded-[var(--radius-input)] text-center text-[24px] font-bold tracking-[1em] outline-none transition-colors`}
                     placeholder="••••"
                     inputMode="numeric"
                   />

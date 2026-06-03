@@ -23,21 +23,31 @@ export default function MetricCard({
         id={id}
         type="button"
         className="
-          w-full bg-card rounded-[var(--radius-hero)]
+          w-full bg-card rounded-[var(--radius-card)]
           p-[var(--spacing-lg)]
-          border border-border/50
-          shadow-sm
-          flex flex-col items-start
+          shadow-[var(--shadow-hero)]
+          flex items-start gap-[var(--spacing-sm)]
           transition-all duration-[var(--transition-normal)]
           active:scale-[0.98]
           cursor-pointer select-none
+          relative overflow-hidden
         "
         aria-label={`${label}: ${value}`}
       >
-        <span className="text-[13px] font-medium text-text-tertiary mb-2 uppercase tracking-wider">{label}</span>
-        <span className="text-[40px] font-bold tracking-tight text-text tabular-nums leading-none">
-          {value}
-        </span>
+        {/* Accent bar */}
+        <div
+          className="absolute left-0 top-[16px] bottom-[16px] w-[4px] rounded-r-full"
+          style={{ backgroundColor: accentColor }}
+        />
+
+        <div className="flex flex-col items-start pl-[var(--spacing-s)]">
+          <span className="text-[13px] font-semibold text-text-tertiary mb-[var(--spacing-xs)] uppercase tracking-wider">
+            {label}
+          </span>
+          <span className="text-[48px] font-extrabold tracking-tighter text-text tabular-nums leading-none">
+            {value}
+          </span>
+        </div>
       </button>
     );
   }
@@ -49,34 +59,32 @@ export default function MetricCard({
       className="
         bg-card rounded-[var(--radius-card)]
         p-[var(--spacing-md)]
-        border border-border/50
+        shadow-[var(--shadow-soft)]
         transition-all duration-[var(--transition-normal)]
         active:scale-[0.97]
         cursor-pointer select-none
-        hover:border-border
-        shadow-sm
+        hover:shadow-[var(--shadow-floating)]
         flex flex-col items-start w-full
       "
       aria-label={`${label}: ${value}`}
     >
       {icon && (
         <div
-          className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mb-3"
+          className="flex-shrink-0 w-9 h-9 rounded-[12px] flex items-center justify-center mb-[var(--spacing-s)]"
           style={{ backgroundColor: accentBg }}
         >
-          <span style={{ color: accentColor }} className="[&>svg]:w-4 [&>svg]:h-4">{icon}</span>
+          <span style={{ color: accentColor }} className="[&>svg]:w-[18px] [&>svg]:h-[18px]">{icon}</span>
         </div>
       )}
 
       <div className="flex flex-col items-start min-w-0">
-        <span className="text-[12px] font-medium text-text-secondary mb-1">
+        <span className="text-[12px] font-medium text-text-secondary mb-[var(--spacing-2xs)]">
           {label}
         </span>
-        <span className="text-[24px] font-bold text-text leading-none tabular-nums tracking-tight">
+        <span className="text-[26px] font-bold text-text leading-none tabular-nums tracking-tight">
           {value}
         </span>
       </div>
     </button>
   );
 }
-

@@ -67,11 +67,11 @@ export default function MorePage() {
   }, [logout, router]);
 
   return (
-    <div className="flex-1 flex flex-col pb-[80px]">
+    <div className="flex-1 flex flex-col pb-[100px]">
       {/* Header */}
-      <header className="px-[var(--spacing-md)] pt-[var(--spacing-xl)] pb-[var(--spacing-md)] animate-fade-in">
-        <h1 className="text-[32px] font-bold tracking-tight text-text">More</h1>
-        <p className="text-[15px] text-text-secondary mt-1">
+      <header className="px-[var(--spacing-md)] pt-[var(--spacing-xl)] pb-[var(--spacing-sm)] animate-fade-in">
+        <h1 className="text-[28px] font-bold tracking-tight text-text">More</h1>
+        <p className="text-[14px] text-text-secondary mt-[2px]">
           Manage your salon
         </p>
       </header>
@@ -82,74 +82,74 @@ export default function MorePage() {
         style={{ animationDelay: "50ms" }}
         aria-label="Quick Actions"
       >
-        <p className="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-[var(--spacing-sm)]">
+        <p className="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-[var(--spacing-s)]">
           Quick Actions
         </p>
 
-        <div className="bg-card rounded-[var(--radius-card)] border border-border/50 shadow-sm overflow-hidden">
+        <div className="bg-card rounded-[var(--radius-card)] shadow-[var(--shadow-soft)] overflow-hidden">
           {/* Services */}
           <button
             type="button"
             onClick={() => setShowServicesSheet(true)}
-            className="w-full flex items-center gap-[var(--spacing-md)] px-[var(--spacing-lg)] py-[var(--spacing-md)] min-h-[72px] cursor-pointer active:bg-bg transition-colors text-left hover:bg-bg/50"
+            className="w-full flex items-center gap-[var(--spacing-sm)] px-[var(--spacing-md)] py-[var(--spacing-sm)] min-h-[64px] cursor-pointer active:bg-surface transition-colors text-left"
           >
-            <div className="w-[44px] h-[44px] rounded-[12px] bg-primary-light flex items-center justify-center flex-shrink-0">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="3" y="3" width="7" height="7" />
-                <rect x="14" y="3" width="7" height="7" />
-                <rect x="3" y="14" width="7" height="7" />
-                <rect x="14" y="14" width="7" height="7" />
+            <div className="w-[42px] h-[42px] rounded-[14px] bg-primary-light flex items-center justify-center flex-shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="3" width="7" height="7" rx="1" />
+                <rect x="3" y="14" width="7" height="7" rx="1" />
+                <rect x="14" y="14" width="7" height="7" rx="1" />
               </svg>
             </div>
             <div className="flex-1 min-w-0">
-              <span className="text-[16px] font-semibold text-text">Services</span>
-              <p className="text-[13px] text-text-secondary mt-[2px]">
+              <span className="text-[15px] font-semibold text-text">Services</span>
+              <p className="text-[12px] text-text-secondary mt-[2px]">
                 {services.length} service{services.length !== 1 ? "s" : ""} configured
               </p>
             </div>
             <ChevronRight />
           </button>
 
-          <div className="border-t border-border/40 mx-[var(--spacing-lg)]" />
+          <div className="border-t border-border/20 mx-[var(--spacing-md)]" />
 
           {/* Reward Rules */}
           <button
             type="button"
             onClick={() => setShowRewardSheet(true)}
-            className="w-full flex items-center gap-[var(--spacing-md)] px-[var(--spacing-lg)] py-[var(--spacing-md)] min-h-[72px] cursor-pointer active:bg-bg transition-colors text-left hover:bg-bg/50"
+            className="w-full flex items-center gap-[var(--spacing-sm)] px-[var(--spacing-md)] py-[var(--spacing-sm)] min-h-[64px] cursor-pointer active:bg-surface transition-colors text-left"
           >
-            <div className="w-[44px] h-[44px] rounded-[12px] bg-success-light flex items-center justify-center flex-shrink-0">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <div className="w-[42px] h-[42px] rounded-[14px] bg-success-light flex items-center justify-center flex-shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="8" r="6" />
                 <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
               </svg>
             </div>
             <div className="flex-1 min-w-0">
-              <span className="text-[16px] font-semibold text-text">Reward Rules</span>
-              <p className="text-[13px] text-text-secondary mt-[2px]">
+              <span className="text-[15px] font-semibold text-text">Reward Rules</span>
+              <p className="text-[12px] text-text-secondary mt-[2px]">
                 Earn {rewardPercent}% · Max redeem {maxRedeemPercent}%
               </p>
             </div>
             <ChevronRight />
           </button>
 
-          <div className="border-t border-border/40 mx-[var(--spacing-lg)]" />
+          <div className="border-t border-border/20 mx-[var(--spacing-md)]" />
 
           {/* Shop */}
           <button
             type="button"
             onClick={() => setShowShopSheet(true)}
-            className="w-full flex items-center gap-[var(--spacing-md)] px-[var(--spacing-lg)] py-[var(--spacing-md)] min-h-[72px] cursor-pointer active:bg-bg transition-colors text-left hover:bg-bg/50"
+            className="w-full flex items-center gap-[var(--spacing-sm)] px-[var(--spacing-md)] py-[var(--spacing-sm)] min-h-[64px] cursor-pointer active:bg-surface transition-colors text-left"
           >
-            <div className="w-[44px] h-[44px] rounded-[12px] bg-warning/10 flex items-center justify-center flex-shrink-0">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-warning)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <div className="w-[42px] h-[42px] rounded-[14px] bg-warning-light flex items-center justify-center flex-shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-warning)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z" />
                 <path d="M9 21V12h6v9" />
               </svg>
             </div>
             <div className="flex-1 min-w-0">
-              <span className="text-[16px] font-semibold text-text">Shop</span>
-              <p className="text-[13px] text-text-secondary mt-[2px]">
+              <span className="text-[15px] font-semibold text-text">Shop</span>
+              <p className="text-[12px] text-text-secondary mt-[2px]">
                 {shopName}
               </p>
             </div>
@@ -160,41 +160,41 @@ export default function MorePage() {
 
       {/* Settings */}
       <section
-        className="px-[var(--spacing-md)] mt-[var(--spacing-lg)] animate-fade-in"
+        className="px-[var(--spacing-md)] mt-[var(--spacing-md)] animate-fade-in"
         style={{ animationDelay: "100ms" }}
         aria-label="Settings"
       >
-        <p className="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-[var(--spacing-sm)]">
+        <p className="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-[var(--spacing-s)]">
           Settings
         </p>
 
-        <div className="bg-card rounded-[var(--radius-card)] border border-border/50 shadow-sm overflow-hidden">
+        <div className="bg-card rounded-[var(--radius-card)] shadow-[var(--shadow-subtle)] overflow-hidden">
           {/* Notifications */}
           <SettingsRow icon={<BellIcon />} label="Notifications" subtitle="Manage alerts" />
 
-          <div className="border-t border-border/40 mx-[var(--spacing-lg)]" />
+          <div className="border-t border-border/20 mx-[var(--spacing-md)]" />
 
           {/* Help */}
           <SettingsRow icon={<HelpIcon />} label="Help" subtitle="FAQ & support" />
 
-          <div className="border-t border-border/40 mx-[var(--spacing-lg)]" />
+          <div className="border-t border-border/20 mx-[var(--spacing-md)]" />
 
           {/* Logout */}
           <button
             type="button"
             onClick={() => setShowLogoutConfirm(true)}
-            className="w-full flex items-center gap-[var(--spacing-md)] px-[var(--spacing-lg)] py-[var(--spacing-md)] min-h-[72px] cursor-pointer active:bg-bg transition-colors text-left hover:bg-bg/50"
+            className="w-full flex items-center gap-[var(--spacing-sm)] px-[var(--spacing-md)] py-[var(--spacing-sm)] min-h-[64px] cursor-pointer active:bg-surface transition-colors text-left"
           >
-            <div className="w-[44px] h-[44px] rounded-[12px] bg-error-light flex items-center justify-center flex-shrink-0">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-error)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <div className="w-[42px] h-[42px] rounded-[14px] bg-error-light flex items-center justify-center flex-shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-error)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
                 <polyline points="16 17 21 12 16 7" />
                 <line x1="21" y1="12" x2="9" y2="12" />
               </svg>
             </div>
             <div className="flex-1 min-w-0">
-              <span className="text-[16px] font-semibold text-error">Logout</span>
-              <p className="text-[13px] text-text-secondary mt-[2px]">
+              <span className="text-[15px] font-semibold text-error">Logout</span>
+              <p className="text-[12px] text-text-secondary mt-[2px]">
                 Sign out of your account
               </p>
             </div>
@@ -257,7 +257,7 @@ export default function MorePage() {
           onClick={() => setShowLogoutConfirm(false)}
         >
           <div
-            className="w-full max-w-[768px] bg-card rounded-t-[var(--radius-sheet)] shadow-[0_-4px_20px_rgba(0,0,0,0.1)] pb-[env(safe-area-inset-bottom,16px)] animate-slide-up"
+            className="w-full max-w-[768px] bg-card rounded-t-[32px] shadow-[0_-8px_32px_rgba(0,0,0,0.12)] pb-[env(safe-area-inset-bottom,16px)] animate-slide-up"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-center pt-[12px] pb-[8px]">
@@ -830,14 +830,14 @@ function SettingsRow({ icon, label, subtitle }: { icon: React.ReactNode; label: 
   return (
     <button
       type="button"
-      className="w-full flex items-center gap-[var(--spacing-md)] px-[var(--spacing-lg)] py-[var(--spacing-md)] min-h-[72px] cursor-pointer active:bg-bg transition-colors text-left hover:bg-bg/50"
+      className="w-full flex items-center gap-[var(--spacing-sm)] px-[var(--spacing-md)] py-[var(--spacing-sm)] min-h-[64px] cursor-pointer active:bg-surface transition-colors text-left"
     >
-      <div className="w-[44px] h-[44px] rounded-[12px] bg-bg border border-border/50 shadow-sm flex items-center justify-center flex-shrink-0">
+      <div className="w-[42px] h-[42px] rounded-[14px] bg-surface flex items-center justify-center flex-shrink-0">
         {icon}
       </div>
       <div className="flex-1 min-w-0">
-        <span className="text-[16px] font-semibold text-text">{label}</span>
-        <p className="text-[13px] text-text-secondary mt-[2px]">{subtitle}</p>
+        <span className="text-[15px] font-semibold text-text">{label}</span>
+        <p className="text-[12px] text-text-secondary mt-[2px]">{subtitle}</p>
       </div>
       <ChevronRight />
     </button>
@@ -849,7 +849,7 @@ function SettingsRow({ icon, label, subtitle }: { icon: React.ReactNode; label: 
 
 function ChevronRight() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-text-tertiary flex-shrink-0">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-text-tertiary/50 flex-shrink-0">
       <polyline points="9 18 15 12 9 6" />
     </svg>
   );
@@ -857,7 +857,7 @@ function ChevronRight() {
 
 function BellIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-text-secondary">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-text-secondary">
       <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
       <path d="M13.73 21a2 2 0 0 1-3.46 0" />
     </svg>
@@ -866,7 +866,7 @@ function BellIcon() {
 
 function HelpIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-text-secondary">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-text-secondary">
       <circle cx="12" cy="12" r="10" />
       <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
       <line x1="12" y1="17" x2="12.01" y2="17" />

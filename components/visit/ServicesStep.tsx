@@ -50,12 +50,12 @@ export default function ServicesStep({ customerName, initialServices, onContinue
                 onClick={() => toggleService(service)}
                 className={`
                   flex flex-col items-start p-[var(--spacing-md)]
-                  rounded-[var(--radius-card)] border text-left
-                  transition-all duration-200 active:scale-95 cursor-pointer
+                  rounded-[var(--radius-card)] text-left
+                  transition-all duration-200 active:scale-[0.97] cursor-pointer
                   min-h-[110px] justify-between
                   ${isSelected 
-                    ? "border-primary bg-primary/5 shadow-sm" 
-                    : "border-border/60 bg-card shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:border-border/80"
+                    ? "bg-primary/5 shadow-[0_0_0_2px_var(--color-primary)] shadow-primary" 
+                    : "bg-card shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-floating)]"
                   }
                 `}
               >
@@ -98,7 +98,7 @@ export default function ServicesStep({ customerName, initialServices, onContinue
       </div>
 
       {/* Sticky Bottom Bar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-card border-t border-border/50 p-[var(--spacing-md)] pb-[calc(var(--spacing-md)+env(safe-area-inset-bottom,0px))] shadow-[0_-8px_32px_rgba(0,0,0,0.08)] z-10 flex flex-col gap-[var(--spacing-md)]">
+      <div className="fixed bottom-0 left-0 right-0 bg-card/90 backdrop-blur-xl border-t border-border/20 p-[var(--spacing-md)] pb-[calc(var(--spacing-md)+env(safe-area-inset-bottom,0px))] shadow-[0_-8px_32px_rgba(0,0,0,0.08)] z-10 flex flex-col gap-[var(--spacing-sm)]">
         <div className="flex items-center justify-between">
           <div>
             <p className="text-[13px] text-text-tertiary font-medium">{selected.length} Services Selected</p>
@@ -117,7 +117,7 @@ export default function ServicesStep({ customerName, initialServices, onContinue
           type="button"
           disabled={selected.length === 0}
           onClick={() => onContinue(selected)}
-          className="w-full min-h-[56px] bg-primary text-white font-semibold rounded-[var(--radius-button)] disabled:opacity-50 disabled:bg-text-tertiary disabled:active:scale-100 active:scale-95 transition-all cursor-pointer flex items-center justify-center gap-[8px] shadow-[0_4px_12px_rgba(24,23,21,0.15)]"
+          className="w-full min-h-[56px] bg-primary text-white font-semibold text-[16px] rounded-[var(--radius-button)] disabled:opacity-40 disabled:active:scale-100 active:scale-[0.97] transition-all cursor-pointer flex items-center justify-center gap-[8px] shadow-[0_4px_16px_rgba(79,70,229,0.3)]"
         >
           Continue
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

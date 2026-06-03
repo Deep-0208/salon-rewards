@@ -89,7 +89,7 @@ export default function TransactionDetailSheet({
           w-full max-w-[768px]
           bg-card
           rounded-t-[var(--radius-sheet)]
-          shadow-[0_-4px_20px_rgba(0,0,0,0.1)]
+          shadow-[0_-8px_32px_rgba(0,0,0,0.12)]
           pb-[env(safe-area-inset-bottom,16px)]
           animate-slide-up
         "
@@ -100,8 +100,8 @@ export default function TransactionDetailSheet({
         </div>
 
         {/* Header */}
-        <div className="flex items-center justify-between px-[var(--spacing-md)] pb-[var(--spacing-md)]">
-          <div className="flex items-center gap-[12px]">
+        <div className="flex items-center justify-between px-[var(--spacing-md)] pb-[var(--spacing-sm)]">
+          <div className="flex items-center gap-[var(--spacing-s)]">
             <div className="w-[44px] h-[44px] rounded-full bg-primary-light flex items-center justify-center text-[16px] font-semibold text-primary">
               {initial}
             </div>
@@ -116,7 +116,7 @@ export default function TransactionDetailSheet({
           </div>
           <button
             onClick={onClose}
-            className="w-[44px] h-[44px] rounded-full bg-bg flex items-center justify-center text-text-tertiary hover:text-text cursor-pointer transition-colors"
+            className="w-[44px] h-[44px] rounded-full bg-surface flex items-center justify-center text-text-tertiary hover:text-text cursor-pointer transition-colors"
             aria-label="Close"
           >
             <svg
@@ -135,19 +135,19 @@ export default function TransactionDetailSheet({
         </div>
 
         {/* Divider */}
-        <div className="border-t border-border/40" />
+        <div className="border-t border-border/30" />
 
         {/* Details */}
-        <div className="px-[var(--spacing-md)] pt-[var(--spacing-md)] pb-[var(--spacing-sm)]">
+        <div className="px-[var(--spacing-md)] pt-[var(--spacing-sm)] pb-[var(--spacing-sm)]">
           {/* Date + Time */}
-          <div className="flex items-center gap-[6px] mb-[var(--spacing-md)]">
+          <div className="flex items-center gap-[6px] mb-[var(--spacing-sm)]">
             <svg
               width="14"
               height="14"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              strokeWidth="2"
+              strokeWidth="1.8"
               strokeLinecap="round"
               className="text-text-tertiary"
             >
@@ -160,7 +160,7 @@ export default function TransactionDetailSheet({
           </div>
 
           {/* Services */}
-          <div className="mb-[var(--spacing-md)]">
+          <div className="mb-[var(--spacing-sm)]">
             <p className="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-[8px]">
               Services
             </p>
@@ -168,7 +168,7 @@ export default function TransactionDetailSheet({
               {services.map((s, i) => (
                 <span
                   key={i}
-                  className="inline-flex items-center px-[10px] py-[5px] rounded-full bg-bg text-[13px] font-medium text-text border border-border/40"
+                  className="inline-flex items-center px-[10px] py-[5px] rounded-full bg-surface text-[13px] font-medium text-text"
                 >
                   {s}
                 </span>
@@ -177,8 +177,8 @@ export default function TransactionDetailSheet({
           </div>
 
           {/* Billing Breakdown */}
-          <div className="bg-bg rounded-[var(--radius-input)] p-[var(--spacing-md)]">
-            <p className="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-[12px]">
+          <div className="bg-surface rounded-[var(--radius-input)] p-[var(--spacing-sm)]">
+            <p className="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-[var(--spacing-s)]">
               Billing
             </p>
 
@@ -203,7 +203,7 @@ export default function TransactionDetailSheet({
                 </div>
               )}
 
-              <div className="border-t border-border/40 pt-[10px] flex justify-between">
+              <div className="border-t border-border/30 pt-[10px] flex justify-between">
                 <span className="text-[15px] font-semibold text-text">
                   Amount Paid
                 </span>
@@ -215,7 +215,7 @@ export default function TransactionDetailSheet({
           </div>
 
           {/* Reward Earned + Payment Method */}
-          <div className="flex items-center justify-between mt-[var(--spacing-md)]">
+          <div className="flex items-center justify-between mt-[var(--spacing-sm)]">
             <div className="flex items-center gap-[6px]">
               <svg
                 width="14"
@@ -223,7 +223,7 @@ export default function TransactionDetailSheet({
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="var(--color-success)"
-                strokeWidth="2"
+                strokeWidth="1.8"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
@@ -236,10 +236,10 @@ export default function TransactionDetailSheet({
             </div>
 
             <span
-              className={`inline-flex items-center px-[10px] py-[4px] rounded-full text-[11px] font-bold tracking-wide ${
+              className={`inline-flex items-center px-[10px] py-[4px] rounded-full text-[10px] font-bold tracking-wider ${
                 method === "Online"
                   ? "bg-success-light text-success"
-                  : "bg-border/60 text-text-secondary"
+                  : "bg-surface text-text-tertiary"
               }`}
             >
               {method.toUpperCase()}

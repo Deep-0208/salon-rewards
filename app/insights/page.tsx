@@ -60,11 +60,11 @@ export default function InsightsPage() {
   const closeSheet = useCallback(() => setActiveSheet(null), []);
 
   return (
-    <div className="flex-1 flex flex-col pb-[80px]">
+    <div className="flex-1 flex flex-col pb-[100px]">
       {/* Header */}
-      <header className="px-[var(--spacing-md)] pt-[var(--spacing-xl)] pb-[var(--spacing-md)] animate-fade-in">
-        <h1 className="text-[32px] font-bold tracking-tight text-text">Insights</h1>
-        <p className="text-[15px] text-text-secondary mt-1">
+      <header className="px-[var(--spacing-md)] pt-[var(--spacing-xl)] pb-[var(--spacing-sm)] animate-fade-in">
+        <h1 className="text-[28px] font-bold tracking-tight text-text">Insights</h1>
+        <p className="text-[14px] text-text-secondary mt-[2px]">
           Today&apos;s performance
         </p>
       </header>
@@ -75,7 +75,7 @@ export default function InsightsPage() {
         style={{ animationDelay: "50ms" }}
         aria-label="Today's insights"
       >
-        <div className="flex flex-col gap-[var(--spacing-sm)]">
+        <div className="flex flex-col gap-[var(--spacing-s)]">
           {/* Revenue Card */}
           <InsightCard
             id="insight-revenue"
@@ -114,6 +114,24 @@ export default function InsightsPage() {
         </div>
       </section>
 
+      {/* Today's Activity Summary */}
+      <section
+        className="px-[var(--spacing-md)] mt-[var(--spacing-md)] animate-fade-in"
+        style={{ animationDelay: "100ms" }}
+        aria-label="Today's activity"
+      >
+        <p className="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-[var(--spacing-s)]">
+          Today&apos;s Activity
+        </p>
+        <div className="bg-card rounded-[var(--radius-card)] shadow-[var(--shadow-subtle)] px-[var(--spacing-md)] py-[var(--spacing-sm)] flex items-center justify-around">
+          <ActivityItem value={String(insights.visitCount)} label="Visits" />
+          <div className="w-px h-[28px] bg-border/30" />
+          <ActivityItem value={String(insights.customerCount)} label="Customers" />
+          <div className="w-px h-[28px] bg-border/30" />
+          <ActivityItem value={`₹${insights.totalRewardsEarned}`} label="Rewards Issued" />
+        </div>
+      </section>
+
       {/* Bottom Nav */}
       <BottomNav />
 
@@ -131,7 +149,7 @@ export default function InsightsPage() {
               label="Online"
               value={`₹${insights.onlineRevenue.toLocaleString("en-IN")}`}
             />
-            <div className="border-t border-border/40 pt-[10px]">
+            <div className="border-t border-border/30 pt-[10px]">
               <BreakdownRow
                 label="Total Revenue"
                 value={`₹${insights.totalRevenue.toLocaleString("en-IN")}`}
@@ -157,7 +175,7 @@ export default function InsightsPage() {
               label="Total Visits"
               value={String(insights.visitCount)}
             />
-            <div className="border-t border-border/40 pt-[10px]">
+            <div className="border-t border-border/30 pt-[10px]">
               <p className="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-[8px]">
                 Customers Served
               </p>
@@ -190,7 +208,7 @@ export default function InsightsPage() {
               value={`₹${insights.totalRewardsUsed.toLocaleString("en-IN")}`}
               valueColor="text-error"
             />
-            <div className="border-t border-border/40 pt-[10px]">
+            <div className="border-t border-border/30 pt-[10px]">
               <BreakdownRow
                 label="Net Rewards"
                 value={`₹${(
@@ -208,6 +226,15 @@ export default function InsightsPage() {
 
 
 // ── Sub-Components ──
+
+function ActivityItem({ value, label }: { value: string; label: string }) {
+  return (
+    <div className="flex flex-col items-center gap-[2px]">
+      <span className="text-[16px] font-bold text-text tabular-nums leading-none">{value}</span>
+      <span className="text-[11px] font-medium text-text-tertiary leading-none">{label}</span>
+    </div>
+  );
+}
 
 function InsightCard({
   id,
@@ -236,23 +263,22 @@ function InsightCard({
       className="
         w-full text-left
         bg-card rounded-[var(--radius-card)]
-        border border-border/50
-        shadow-sm
-        px-[var(--spacing-lg)] py-[var(--spacing-md)]
-        flex items-center gap-[var(--spacing-md)]
-        min-h-[100px]
+        shadow-[var(--shadow-soft)]
+        px-[var(--spacing-md)] py-[var(--spacing-sm)]
+        flex items-center gap-[var(--spacing-sm)]
+        min-h-[88px]
         cursor-pointer
         active:scale-[0.98]
         transition-all duration-[var(--transition-normal)]
         outline-none
         focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2
-        hover:border-border
+        hover:shadow-[var(--shadow-floating)]
       "
       aria-label={`${label}: ${value}`}
     >
       {/* Icon */}
       <div
-        className="w-[48px] h-[48px] rounded-[14px] flex items-center justify-center flex-shrink-0"
+        className="w-[48px] h-[48px] rounded-[16px] flex items-center justify-center flex-shrink-0"
         style={{ backgroundColor: accentBg, color: accentColor }}
       >
         {icon}
@@ -260,13 +286,13 @@ function InsightCard({
 
       {/* Content */}
       <div className="flex-1 min-w-0 flex flex-col justify-center">
-        <p className="text-[13px] font-medium text-text-tertiary uppercase tracking-wider leading-none mb-[4px]">
+        <p className="text-[12px] font-semibold text-text-tertiary uppercase tracking-wider leading-none mb-[6px]">
           {label}
         </p>
-        <p className="text-[32px] font-bold text-text tabular-nums leading-none tracking-tight mb-[4px]">
+        <p className="text-[30px] font-bold text-text tabular-nums leading-none tracking-tight mb-[4px]">
           {value}
         </p>
-        <p className="text-[13px] text-text-secondary leading-none">{subtitle}</p>
+        <p className="text-[12px] text-text-secondary leading-none">{subtitle}</p>
       </div>
 
       {/* Chevron hint */}
@@ -279,7 +305,7 @@ function InsightCard({
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="text-text-tertiary flex-shrink-0"
+        className="text-text-tertiary/50 flex-shrink-0"
       >
         <polyline points="9 18 15 12 9 6" />
       </svg>
@@ -302,18 +328,18 @@ function BreakdownSheet({
       onClick={onClose}
     >
       <div
-        className="w-full max-w-[768px] bg-card rounded-t-[var(--radius-sheet)] shadow-[0_-4px_20px_rgba(0,0,0,0.1)] pb-[env(safe-area-inset-bottom,16px)] animate-slide-up"
+        className="w-full max-w-[768px] bg-card rounded-t-[var(--radius-sheet)] shadow-[0_-8px_32px_rgba(0,0,0,0.12)] pb-[env(safe-area-inset-bottom,16px)] animate-slide-up"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-center pt-[12px] pb-[8px]">
           <div className="w-[36px] h-[4px] rounded-full bg-border" />
         </div>
 
-        <div className="flex items-center justify-between px-[var(--spacing-md)] pb-[var(--spacing-md)]">
+        <div className="flex items-center justify-between px-[var(--spacing-md)] pb-[var(--spacing-sm)]">
           <h2 className="text-[18px] font-semibold text-text">{title}</h2>
           <button
             onClick={onClose}
-            className="w-[36px] h-[36px] rounded-full bg-bg flex items-center justify-center text-text-tertiary hover:text-text cursor-pointer transition-colors"
+            className="w-[36px] h-[36px] rounded-full bg-surface flex items-center justify-center text-text-tertiary hover:text-text cursor-pointer transition-colors"
             aria-label="Close"
           >
             <svg
@@ -331,9 +357,9 @@ function BreakdownSheet({
           </button>
         </div>
 
-        <div className="border-t border-border/40" />
+        <div className="border-t border-border/30" />
 
-        <div className="px-[var(--spacing-md)] pt-[var(--spacing-md)] pb-[var(--spacing-sm)]">
+        <div className="px-[var(--spacing-md)] pt-[var(--spacing-sm)] pb-[var(--spacing-sm)]">
           {children}
         </div>
       </div>
@@ -353,7 +379,7 @@ function BreakdownRow({
   valueColor?: string;
 }) {
   return (
-    <div className="flex justify-between items-center py-[6px] px-[14px] bg-bg rounded-[var(--radius-input)]">
+    <div className="flex justify-between items-center py-[8px] px-[var(--spacing-sm)] bg-surface rounded-[var(--radius-input)]">
       <span
         className={`text-[14px] ${
           bold ? "font-semibold text-text" : "text-text-secondary"
@@ -383,7 +409,7 @@ function RevenueIcon() {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1.8"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
@@ -401,7 +427,7 @@ function CustomersIcon() {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1.8"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
@@ -421,7 +447,7 @@ function RewardsIcon() {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1.8"
       strokeLinecap="round"
       strokeLinejoin="round"
     >

@@ -44,11 +44,11 @@ export default function TransactionsPage() {
   });
 
   return (
-    <div className="flex-1 flex flex-col pb-[80px]">
+    <div className="flex-1 flex flex-col pb-[100px]">
       {/* Header */}
-      <header className="px-[var(--spacing-md)] pt-[var(--spacing-xl)] pb-[var(--spacing-sm)] animate-fade-in">
-        <h1 className="text-[32px] font-bold tracking-tight text-text">Transactions</h1>
-        <p className="text-[15px] text-text-secondary mt-1">
+      <header className="px-[var(--spacing-md)] pt-[var(--spacing-xl)] pb-[var(--spacing-xs)] animate-fade-in">
+        <h1 className="text-[28px] font-bold tracking-tight text-text">Transactions</h1>
+        <p className="text-[14px] text-text-secondary mt-[2px]">
           Recent activity
         </p>
       </header>
@@ -64,16 +64,16 @@ export default function TransactionsPage() {
             action={{ label: "New Bill", onClick: () => router.push("/visit") }}
           />
         ) : (
-          <div className="flex flex-col gap-[var(--spacing-lg)]">
+          <div className="flex flex-col gap-[var(--spacing-md)]">
             {dateKeys.map((dateKey) => (
               <section key={dateKey} aria-label={`Transactions on ${dateKey}`}>
                 {/* Date Label */}
-                <p className="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-[var(--spacing-sm)]">
+                <p className="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-[var(--spacing-s)]">
                   {dateKey === todayLabel ? "Today" : dateKey}
                 </p>
 
                 {/* Cards */}
-                <div className="flex flex-col gap-[var(--spacing-sm)]">
+                <div className="flex flex-col gap-[var(--spacing-s)]">
                   {groupedTransactions[dateKey].map((txn) => (
                     <TransactionCard
                       key={txn.id}
