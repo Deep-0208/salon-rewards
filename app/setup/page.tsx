@@ -196,7 +196,7 @@ export default function SetupPage() {
                 placeholder="20"
                 type="number"
                 suffix="%"
-                helperText="Maximum % of bill that can be paid with rewards"
+                helperText="Max % of a customer's reward balance they can redeem per visit"
                 disabled={isLoading}
                 max={100}
               />
