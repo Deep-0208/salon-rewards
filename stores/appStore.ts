@@ -279,17 +279,17 @@ export const useAppStore = create<AppState>((set, get) => ({
   isSetupComplete: false,
   ownerPhone: "",
 
-  // Shop Config
+  // Shop Config — empty until setup is completed
   shopConfig: {
-    shopName: "Royal Salon",
+    shopName: "",
     rewardPercent: 10,
     maxRedeemPercent: 20,
   },
 
-  // Data
-  services: MOCK_SERVICES,
-  customers: MOCK_CUSTOMERS,
-  transactions: MOCK_TRANSACTIONS,
+  // Data — empty until populated after setup
+  services: [],
+  customers: [],
+  transactions: [],
 
   // Actions
   login: (phone: string) =>
