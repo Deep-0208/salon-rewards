@@ -1,0 +1,297 @@
+{
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\eslint.config.mjs": {
+    "mtime": 1779808014.4806886,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\next-env.d.ts": {
+    "mtime": 1779892843.1703136,
+    "ast_hash": "d0f8375ae1199dc7acd3977fc33b78b8",
+    "semantic_hash": "d0f8375ae1199dc7acd3977fc33b78b8"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\next.config.ts": {
+    "mtime": 1779892688.2821403,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": "9b77af189a21a7a64e4bd7a426f64176"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\package.json": {
+    "mtime": 1779880896.5456417,
+    "ast_hash": "dcdd95a20a6ea5177f60d3cc7e492092",
+    "semantic_hash": "dcdd95a20a6ea5177f60d3cc7e492092"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\postcss.config.mjs": {
+    "mtime": 1779808014.509649,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\tsconfig.json": {
+    "mtime": 1779880514.1977077,
+    "ast_hash": "02fc19ad21338c2ab820a70136310db4",
+    "semantic_hash": "02fc19ad21338c2ab820a70136310db4"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\app\\layout.tsx": {
+    "mtime": 1779891147.980422,
+    "ast_hash": "8c61c4632ea0d2945f313de3abd4474d",
+    "semantic_hash": "8c61c4632ea0d2945f313de3abd4474d"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\app\\page.tsx": {
+    "mtime": 1779880772.894532,
+    "ast_hash": "c6568da095f78e9c922385271ffcbb2c",
+    "semantic_hash": "c6568da095f78e9c922385271ffcbb2c"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\app\\login\\page.tsx": {
+    "mtime": 1779892300.5142884,
+    "ast_hash": "02317414a971bbfda1dc0077e2b38036",
+    "semantic_hash": "02317414a971bbfda1dc0077e2b38036"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\app\\setup\\page.tsx": {
+    "mtime": 1779883121.9450974,
+    "ast_hash": "cb353e9a09283e6c4766e1acaf37cacb",
+    "semantic_hash": "cb353e9a09283e6c4766e1acaf37cacb"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\login\\BrandHeader.tsx": {
+    "mtime": 1779880789.160293,
+    "ast_hash": "834c9e3efee34327e5a83c0033a8b094",
+    "semantic_hash": "834c9e3efee34327e5a83c0033a8b094"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\login\\Button.tsx": {
+    "mtime": 1779881978.38612,
+    "ast_hash": "2d6710077e71643984275d6303affb29",
+    "semantic_hash": "2d6710077e71643984275d6303affb29"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\login\\OTPInput.tsx": {
+    "mtime": 1779880832.9501693,
+    "ast_hash": "06596ce078f28d24a5f1976115253d36",
+    "semantic_hash": "06596ce078f28d24a5f1976115253d36"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\login\\PhoneInput.tsx": {
+    "mtime": 1779892792.837296,
+    "ast_hash": "9999dfa6714d772708a5bdda0453cb14",
+    "semantic_hash": "9999dfa6714d772708a5bdda0453cb14"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\setup\\ServiceChips.tsx": {
+    "mtime": 1779883119.9151604,
+    "ast_hash": "052d399046e5ff0101ee8aab96121384",
+    "semantic_hash": "052d399046e5ff0101ee8aab96121384"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\setup\\StepIndicator.tsx": {
+    "mtime": 1779882497.6438427,
+    "ast_hash": "f81924d7b38e4f122b47259bbca237ec",
+    "semantic_hash": "f81924d7b38e4f122b47259bbca237ec"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\setup\\TextInput.tsx": {
+    "mtime": 1779882514.0974493,
+    "ast_hash": "f82660f660a6c0af2db75054624d8aae",
+    "semantic_hash": "f82660f660a6c0af2db75054624d8aae"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\AGENTS.md": {
+    "mtime": 1779880590.0080268,
+    "ast_hash": "9e09241799026ac05be315a2f0b50055",
+    "semantic_hash": "9e09241799026ac05be315a2f0b50055"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\CLAUDE.md": {
+    "mtime": 1779880590.0085917,
+    "ast_hash": "5c27369b226fcf2be8a6cfe52224e767",
+    "semantic_hash": "5c27369b226fcf2be8a6cfe52224e767"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\README.md": {
+    "mtime": 1779808014.4604862,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": "f15aaa42d5d299d091b1171097ea56ad"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\rules\\build-discipline.md": {
+    "mtime": 1779879356.4923596,
+    "ast_hash": "3d9196d90fdc38a50310f093f4fe240c",
+    "semantic_hash": "3d9196d90fdc38a50310f093f4fe240c"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\rules\\prototype-mode.md": {
+    "mtime": 1779879504.4632533,
+    "ast_hash": "6de211508551663b12451ed02d76e923",
+    "semantic_hash": "6de211508551663b12451ed02d76e923"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\rules\\safe-incremental-delivery.md": {
+    "mtime": 1779878893.1709766,
+    "ast_hash": "2e32ebace63957664a74c14cb925077c",
+    "semantic_hash": "2e32ebace63957664a74c14cb925077c"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\workflows\\audit.md": {
+    "mtime": 1779807768.2968855,
+    "ast_hash": "f22ef095306b971026f5de14b106f36a",
+    "semantic_hash": "f22ef095306b971026f5de14b106f36a"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\workflows\\build-component.md": {
+    "mtime": 1779807699.2161982,
+    "ast_hash": "42af371526a53f53307fb4b85d31c94c",
+    "semantic_hash": "42af371526a53f53307fb4b85d31c94c"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\workflows\\build-flow.md": {
+    "mtime": 1779807755.2177033,
+    "ast_hash": "bc1d72ef098b8a1fd1b3c09b90b6caca",
+    "semantic_hash": "bc1d72ef098b8a1fd1b3c09b90b6caca"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\workflows\\build-screen.md": {
+    "mtime": 1779807661.6946495,
+    "ast_hash": "8aeca13fda181ca428eded2b93cdf03a",
+    "semantic_hash": "8aeca13fda181ca428eded2b93cdf03a"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\workflows\\build-state.md": {
+    "mtime": 1779807733.7475998,
+    "ast_hash": "cf11f6cd78f02173e2686a95220a73e6",
+    "semantic_hash": "cf11f6cd78f02173e2686a95220a73e6"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\workflows\\commit.md": {
+    "mtime": 1779879126.1943192,
+    "ast_hash": "b418086158ba8754af3b5550ca7c6221",
+    "semantic_hash": "b418086158ba8754af3b5550ca7c6221"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\workflows\\edit-screen.md": {
+    "mtime": 1779807673.739926,
+    "ast_hash": "d9f66ba7438818a3d610951276122ea0",
+    "semantic_hash": "d9f66ba7438818a3d610951276122ea0"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\workflows\\fix-ui.md": {
+    "mtime": 1779807719.370168,
+    "ast_hash": "72ecb06b15ead565e5ec9cc8b45145f3",
+    "semantic_hash": "72ecb06b15ead565e5ec9cc8b45145f3"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\workflows\\generate-pr.md": {
+    "mtime": 1779807792.2704854,
+    "ast_hash": "9cbe2c629728ea246f86aa0a329b07b9",
+    "semantic_hash": "9cbe2c629728ea246f86aa0a329b07b9"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\workflows\\plan.md": {
+    "mtime": 1779878965.4883108,
+    "ast_hash": "96970597994bf5fb5268e45094bf7447",
+    "semantic_hash": "96970597994bf5fb5268e45094bf7447"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\workflows\\run.md": {
+    "mtime": 1779883229.487916,
+    "ast_hash": "9dac7d1e4058a056e4826f68823cc073",
+    "semantic_hash": "9dac7d1e4058a056e4826f68823cc073"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\docs\\01_product_brief.md": {
+    "mtime": 1779786586.3104825,
+    "ast_hash": "e10f6d947469df1c034b3a86308c4635",
+    "semantic_hash": "e10f6d947469df1c034b3a86308c4635"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\docs\\02_prd.md": {
+    "mtime": 1779786611.114185,
+    "ast_hash": "e9235bea73bc7808d31de002190346d5",
+    "semantic_hash": "e9235bea73bc7808d31de002190346d5"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\docs\\03_ui_spec.md": {
+    "mtime": 1779864368.0357108,
+    "ast_hash": "dfda4cca612b118082a8e058d14ae42d",
+    "semantic_hash": "dfda4cca612b118082a8e058d14ae42d"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\docs\\04_tech_stack.md": {
+    "mtime": 1779786656.4749582,
+    "ast_hash": "9e46be2b151f98d235343400cf47adbb",
+    "semantic_hash": "9e46be2b151f98d235343400cf47adbb"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\docs\\05_build_rules.md": {
+    "mtime": 1779864349.0600638,
+    "ast_hash": "dbf830b6420850c75f591f34c09628a0",
+    "semantic_hash": "dbf830b6420850c75f591f34c09628a0"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\docs\\06_build_spec.md": {
+    "mtime": 1779786677.1792538,
+    "ast_hash": "e8cfb181c321c7abbb930d2cdd446c97",
+    "semantic_hash": "e8cfb181c321c7abbb930d2cdd446c97"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\docs\\07_claude_skill.md": {
+    "mtime": 1779864405.713314,
+    "ast_hash": "d20019ecf0a756e13a7255654f10040c",
+    "semantic_hash": "d20019ecf0a756e13a7255654f10040c"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\docs\\design.md": {
+    "mtime": 1779786844.7912347,
+    "ast_hash": "ba5d8492786c56af2ef21262e61787f7",
+    "semantic_hash": "ba5d8492786c56af2ef21262e61787f7"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\public\\file.svg": {
+    "mtime": 1779808014.5176463,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\public\\globe.svg": {
+    "mtime": 1779808014.5284314,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\public\\next.svg": {
+    "mtime": 1779808014.5394337,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\public\\vercel.svg": {
+    "mtime": 1779808014.5507965,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\public\\window.svg": {
+    "mtime": 1779808014.5603287,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\app\\dashboard\\page.tsx": {
+    "mtime": 1779892234.5239344,
+    "ast_hash": "a3c60b55ceb9142aab16a78cca8e7de0",
+    "semantic_hash": "a3c60b55ceb9142aab16a78cca8e7de0"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\app\\visit\\page.tsx": {
+    "mtime": 1779890751.4806693,
+    "ast_hash": "589965a51cdf82409fa5e1423dae1598",
+    "semantic_hash": "589965a51cdf82409fa5e1423dae1598"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\OfflineBanner.tsx": {
+    "mtime": 1779891142.5578847,
+    "ast_hash": "3edb1e911841f3bfea9b5d251b90b1c1",
+    "semantic_hash": "3edb1e911841f3bfea9b5d251b90b1c1"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\dashboard\\BottomNav.tsx": {
+    "mtime": 1779886333.6263142,
+    "ast_hash": "8444eefb3544866719599766ba663f01",
+    "semantic_hash": "8444eefb3544866719599766ba663f01"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\dashboard\\EmptyState.tsx": {
+    "mtime": 1779885615.3240905,
+    "ast_hash": "3ad2ff718b217ef8245452e782845751",
+    "semantic_hash": "3ad2ff718b217ef8245452e782845751"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\dashboard\\MetricCard.tsx": {
+    "mtime": 1779885560.7096524,
+    "ast_hash": "ed4729dd93e59390a3e9096725b0793d",
+    "semantic_hash": "ed4729dd93e59390a3e9096725b0793d"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\dashboard\\SkeletonDashboard.tsx": {
+    "mtime": 1779885641.211279,
+    "ast_hash": "bd71b0dca070b98651fcac72857c6830",
+    "semantic_hash": "bd71b0dca070b98651fcac72857c6830"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\dashboard\\TransactionRow.tsx": {
+    "mtime": 1779891170.346416,
+    "ast_hash": "5012aa8808863d0da17bf23ccc018a69",
+    "semantic_hash": "5012aa8808863d0da17bf23ccc018a69"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\visit\\BillingStep.tsx": {
+    "mtime": 1779892262.634114,
+    "ast_hash": "78bfeaec6a70357c9fbb54c6a5daee71",
+    "semantic_hash": "78bfeaec6a70357c9fbb54c6a5daee71"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\visit\\CustomerStep.tsx": {
+    "mtime": 1779891816.0958023,
+    "ast_hash": "a03dd82d47133b01e6e52ea14371d8e4",
+    "semantic_hash": "a03dd82d47133b01e6e52ea14371d8e4"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\components\\visit\\ServicesStep.tsx": {
+    "mtime": 1779886953.9396787,
+    "ast_hash": "955ce96667a6526f5c07474817284088",
+    "semantic_hash": "955ce96667a6526f5c07474817284088"
+  },
+  "C:\\Users\\DELL\\Desktop\\salon-rewards-v2\\.agents\\workflows\\graphify.md": {
+    "mtime": 1779883957.0242717,
+    "ast_hash": "1b3ad448db9a834035cace4d8d1dd21d",
+    "semantic_hash": ""
+  }
+}

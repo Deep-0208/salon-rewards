@@ -1,0 +1,589 @@
+{
+  "communities": {
+    "0": [
+      "docs_04_tech_stack_api_pattern",
+      "docs_04_tech_stack_architecture",
+      "docs_04_tech_stack_authentication",
+      "docs_04_tech_stack_backend",
+      "docs_04_tech_stack_build_constraints",
+      "docs_04_tech_stack_business_logic",
+      "docs_04_tech_stack_component_rules",
+      "docs_04_tech_stack_components",
+      "docs_04_tech_stack_data_rules",
+      "docs_04_tech_stack_database",
+      "docs_04_tech_stack_date_handling",
+      "docs_04_tech_stack_deployment",
+      "docs_04_tech_stack_environment_variables",
+      "docs_04_tech_stack_error_handling",
+      "docs_04_tech_stack_firestore_collections",
+      "docs_04_tech_stack_folder_structure",
+      "docs_04_tech_stack_forms",
+      "docs_04_tech_stack_frontend",
+      "docs_04_tech_stack_logging",
+      "docs_04_tech_stack_md",
+      "docs_04_tech_stack_naming_rules",
+      "docs_04_tech_stack_performance",
+      "docs_04_tech_stack_security",
+      "docs_04_tech_stack_state_management",
+      "docs_04_tech_stack_store_rules",
+      "docs_04_tech_stack_styling",
+      "docs_04_tech_stack_technical_stack_specification",
+      "docs_04_tech_stack_testing"
+    ],
+    "1": [
+      "docs_05_build_rules_accessibility_rules",
+      "docs_05_build_rules_ai_execution_rules",
+      "docs_05_build_rules_backend_rules",
+      "docs_05_build_rules_build_philosophy",
+      "docs_05_build_rules_build_rules",
+      "docs_05_build_rules_component_rules",
+      "docs_05_build_rules_core_principle",
+      "docs_05_build_rules_deployment_rules",
+      "docs_05_build_rules_documentation_rules",
+      "docs_05_build_rules_error_handling_rules",
+      "docs_05_build_rules_final_rule",
+      "docs_05_build_rules_firebase_rules",
+      "docs_05_build_rules_forbidden_behavior",
+      "docs_05_build_rules_git_rules",
+      "docs_05_build_rules_md",
+      "docs_05_build_rules_otp_rules",
+      "docs_05_build_rules_performance_rules",
+      "docs_05_build_rules_reward_rules",
+      "docs_05_build_rules_scope_rules",
+      "docs_05_build_rules_security_rules",
+      "docs_05_build_rules_service_rules",
+      "docs_05_build_rules_state_rules",
+      "docs_05_build_rules_store_rules",
+      "docs_05_build_rules_testing_rules",
+      "docs_05_build_rules_ui_rules",
+      "docs_05_build_rules_workflow_protection"
+    ],
+    "2": [
+      "doc_build_spec",
+      "docs_06_build_spec_api_rules",
+      "docs_06_build_spec_build_strategy",
+      "docs_06_build_spec_deliverables",
+      "docs_06_build_spec_final_rule",
+      "docs_06_build_spec_firebase_implementation",
+      "docs_06_build_spec_md",
+      "docs_06_build_spec_objective",
+      "docs_06_build_spec_output_format",
+      "docs_06_build_spec_phase_10_more",
+      "docs_06_build_spec_phase_1_initialize_app",
+      "docs_06_build_spec_phase_2_authentication",
+      "docs_06_build_spec_phase_3_setup",
+      "docs_06_build_spec_phase_4_dashboard",
+      "docs_06_build_spec_phase_5_visit_flow",
+      "docs_06_build_spec_phase_6_reward_engine",
+      "docs_06_build_spec_phase_7_otp_redemption",
+      "docs_06_build_spec_phase_8_transactions",
+      "docs_06_build_spec_phase_9_insights",
+      "docs_06_build_spec_project",
+      "docs_06_build_spec_project_structure",
+      "docs_06_build_spec_quality_gates",
+      "docs_06_build_spec_security",
+      "docs_06_build_spec_testing",
+      "docs_06_build_spec_ux_requirements",
+      "docs_06_build_spec_zustand_implementation"
+    ],
+    "3": [
+      "app_login_page_tsx",
+      "app_setup_page_tsx",
+      "components_login_button_tsx",
+      "components_login_otpinput_tsx",
+      "components_login_phoneinput_tsx",
+      "components_setup_stepindicator_tsx",
+      "components_setup_textinput_tsx",
+      "login_brandheader_brandheader",
+      "login_button_button",
+      "login_button_buttonprops",
+      "login_otpinput_otpinput",
+      "login_otpinput_otpinputprops",
+      "login_page_loginpage",
+      "login_page_step",
+      "login_phoneinput_phoneinput",
+      "login_phoneinput_phoneinputprops",
+      "setup_page_default_services",
+      "setup_page_service",
+      "setup_page_setuppage",
+      "setup_page_step",
+      "setup_servicechips_service",
+      "setup_servicechips_servicechips",
+      "setup_servicechips_servicechipsprops",
+      "setup_stepindicator_stepindicator",
+      "setup_textinput_textinput",
+      "setup_textinput_textinputprops"
+    ],
+    "4": [
+      "docs_03_ui_spec_build_constraints",
+      "docs_03_ui_spec_color_system",
+      "docs_03_ui_spec_dashboard",
+      "docs_03_ui_spec_design_goal",
+      "docs_03_ui_spec_design_principles",
+      "docs_03_ui_spec_device_target",
+      "docs_03_ui_spec_insights",
+      "docs_03_ui_spec_login",
+      "docs_03_ui_spec_md",
+      "docs_03_ui_spec_more",
+      "docs_03_ui_spec_motion",
+      "docs_03_ui_spec_navigation",
+      "docs_03_ui_spec_otp",
+      "docs_03_ui_spec_radius",
+      "docs_03_ui_spec_rewards",
+      "docs_03_ui_spec_screen_rules",
+      "docs_03_ui_spec_services_selection",
+      "docs_03_ui_spec_setup",
+      "docs_03_ui_spec_spacing",
+      "docs_03_ui_spec_states",
+      "docs_03_ui_spec_transactions",
+      "docs_03_ui_spec_visit_flow",
+      "docs_03_ui_spec_visual_style",
+      "docs_design_25_accessibility",
+      "docs_design_8_typography"
+    ],
+    "5": [
+      "docs_design_10_spacing",
+      "docs_design_11_components",
+      "docs_design_12_login",
+      "docs_design_13_first_time_setup",
+      "docs_design_14_dashboard",
+      "docs_design_15_add_visit",
+      "docs_design_16_services",
+      "docs_design_17_rewards",
+      "docs_design_18_reward_verification",
+      "docs_design_19_payment",
+      "docs_design_1_design_goal",
+      "docs_design_21_insights",
+      "docs_design_22_more",
+      "docs_design_23_states",
+      "docs_design_24_motion",
+      "docs_design_26_build_constraints",
+      "docs_design_2_product_principles",
+      "docs_design_3_target_users",
+      "docs_design_4_device_targets",
+      "docs_design_6_visual_language",
+      "docs_design_7_color_system",
+      "docs_design_9_radius",
+      "docs_design_final_ux_goal",
+      "docs_design_md",
+      "docs_design_salon_rewards_design_specification"
+    ],
+    "6": [
+      "eslint_config_mjs",
+      "package_json",
+      "salon_rewards_v2_package_dependencies",
+      "salon_rewards_v2_package_dependencies_next",
+      "salon_rewards_v2_package_dependencies_react",
+      "salon_rewards_v2_package_dependencies_react_dom",
+      "salon_rewards_v2_package_devdependencies",
+      "salon_rewards_v2_package_devdependencies_eslint",
+      "salon_rewards_v2_package_devdependencies_tailwindcss",
+      "salon_rewards_v2_package_devdependencies_tailwindcss_postcss",
+      "salon_rewards_v2_package_devdependencies_types_node",
+      "salon_rewards_v2_package_devdependencies_types_react",
+      "salon_rewards_v2_package_devdependencies_typescript",
+      "salon_rewards_v2_package_name",
+      "salon_rewards_v2_package_private",
+      "salon_rewards_v2_package_scripts",
+      "salon_rewards_v2_package_scripts_build",
+      "salon_rewards_v2_package_scripts_dev",
+      "salon_rewards_v2_package_scripts_lint",
+      "salon_rewards_v2_package_scripts_start",
+      "salon_rewards_v2_package_version"
+    ],
+    "7": [
+      "salon_rewards_v2_tsconfig_compileroptions",
+      "salon_rewards_v2_tsconfig_compileroptions_allowjs",
+      "salon_rewards_v2_tsconfig_compileroptions_esmoduleinterop",
+      "salon_rewards_v2_tsconfig_compileroptions_incremental",
+      "salon_rewards_v2_tsconfig_compileroptions_isolatedmodules",
+      "salon_rewards_v2_tsconfig_compileroptions_jsx",
+      "salon_rewards_v2_tsconfig_compileroptions_lib",
+      "salon_rewards_v2_tsconfig_compileroptions_module",
+      "salon_rewards_v2_tsconfig_compileroptions_moduleresolution",
+      "salon_rewards_v2_tsconfig_compileroptions_noemit",
+      "salon_rewards_v2_tsconfig_compileroptions_paths",
+      "salon_rewards_v2_tsconfig_compileroptions_plugins",
+      "salon_rewards_v2_tsconfig_compileroptions_resolvejsonmodule",
+      "salon_rewards_v2_tsconfig_compileroptions_skiplibcheck",
+      "salon_rewards_v2_tsconfig_compileroptions_strict",
+      "salon_rewards_v2_tsconfig_compileroptions_target",
+      "salon_rewards_v2_tsconfig_exclude",
+      "salon_rewards_v2_tsconfig_include",
+      "salon_rewards_v2_tsconfig_paths",
+      "tsconfig_json"
+    ],
+    "8": [
+      "docs_02_prd_authentication",
+      "docs_02_prd_completion",
+      "docs_02_prd_dashboard",
+      "docs_02_prd_explicitly_out_of_scope",
+      "docs_02_prd_goal",
+      "docs_02_prd_insights",
+      "docs_02_prd_install_flow",
+      "docs_02_prd_md",
+      "docs_02_prd_more",
+      "docs_02_prd_navigation",
+      "docs_02_prd_payments",
+      "docs_02_prd_product",
+      "docs_02_prd_reward_verification",
+      "docs_02_prd_rewards",
+      "docs_02_prd_security_rules",
+      "docs_02_prd_services",
+      "docs_02_prd_setup_flow",
+      "docs_02_prd_states",
+      "docs_02_prd_visit_flow"
+    ],
+    "9": [
+      "app_dashboard_page_tsx",
+      "components_dashboard_skeletondashboard_tsx",
+      "dashboard_bottomnav_bottomnav",
+      "dashboard_bottomnav_bottomnavprops",
+      "dashboard_bottomnav_tabs",
+      "dashboard_emptystate_emptystate",
+      "dashboard_metriccard_metriccard",
+      "dashboard_metriccard_metriccardprops",
+      "dashboard_page_customersicon",
+      "dashboard_page_dashboardpage",
+      "dashboard_page_dashboardstate",
+      "dashboard_page_getgreeting",
+      "dashboard_page_mock_metrics",
+      "dashboard_page_mock_transactions",
+      "dashboard_page_revenueicon",
+      "dashboard_page_rewardsicon",
+      "docs_02_prd_transactions"
+    ],
+    "10": [
+      "docs_01_product_brief_core_value",
+      "docs_01_product_brief_main_workflow",
+      "docs_01_product_brief_md",
+      "docs_01_product_brief_out_of_scope",
+      "docs_01_product_brief_platform",
+      "docs_01_product_brief_principles",
+      "docs_01_product_brief_problem",
+      "docs_01_product_brief_product_brief",
+      "docs_01_product_brief_product_name",
+      "docs_01_product_brief_success_metrics",
+      "docs_01_product_brief_target_users",
+      "docs_01_product_brief_tech_direction",
+      "docs_01_product_brief_vision"
+    ],
+    "11": [
+      "docs_07_claude_skill_claude_skill_specification",
+      "docs_07_claude_skill_component_rules",
+      "docs_07_claude_skill_design_direction",
+      "docs_07_claude_skill_forbidden_aesthetics",
+      "docs_07_claude_skill_md",
+      "docs_07_claude_skill_prompt_template",
+      "docs_07_claude_skill_quality_gate_per_screen",
+      "docs_07_claude_skill_screen_generation_order",
+      "docs_07_claude_skill_skill_location",
+      "docs_07_claude_skill_spacing",
+      "docs_07_claude_skill_typography",
+      "docs_07_claude_skill_viewport",
+      "docs_07_claude_skill_what_claude_must_never_generate"
+    ],
+    "12": [
+      "agents_workflows_commit_md",
+      "workflows_commit_commit",
+      "workflows_commit_next_step",
+      "workflows_commit_purpose",
+      "workflows_commit_rollback",
+      "workflows_commit_step_1_summarize",
+      "workflows_commit_step_2_validate_completion",
+      "workflows_commit_step_3_prepare_commit",
+      "workflows_commit_step_4_recommend_next_task",
+      "workflows_commit_summary",
+      "workflows_commit_testing"
+    ],
+    "13": [
+      "app_visit_page_tsx",
+      "visit_billingstep_billingstep",
+      "visit_customerstep_customerdata",
+      "visit_customerstep_customerstep",
+      "visit_customerstep_customerstepprops",
+      "visit_page_visitpage",
+      "visit_page_visitstep",
+      "visit_servicesstep_popular_services",
+      "visit_servicesstep_serviceitem",
+      "visit_servicesstep_servicesstep",
+      "visit_servicesstep_servicesstepprops"
+    ],
+    "14": [
+      "agents_workflows_plan_md",
+      "workflows_plan_build_order",
+      "workflows_plan_purpose",
+      "workflows_plan_recommended_next_task",
+      "workflows_plan_risks",
+      "workflows_plan_step_1_understand",
+      "workflows_plan_step_2_analyze_structure",
+      "workflows_plan_step_3_risk_review",
+      "workflows_plan_step_4_build_order",
+      "workflows_plan_step_5_recommend_next_task",
+      "workflows_plan_understanding"
+    ],
+    "15": [
+      "comp_brand_header",
+      "comp_otp_input",
+      "comp_phone_input",
+      "comp_service_chips",
+      "comp_step_indicator",
+      "comp_text_input",
+      "doc_prd",
+      "doc_ui_spec",
+      "page_login",
+      "page_setup"
+    ],
+    "16": [
+      "graphify_graphify",
+      "graphify_html_output",
+      "graphify_json_output",
+      "graphify_mcp_server",
+      "graphify_neo4j_integration",
+      "graphify_obsidian_integration",
+      "graphify_query_engine",
+      "graphify_report_output"
+    ],
+    "17": [
+      "app_layout_inter",
+      "app_layout_metadata",
+      "app_layout_rootlayout",
+      "app_layout_tsx",
+      "app_layout_viewport",
+      "components_offlinebanner_tsx"
+    ],
+    "18": [
+      "readme_md",
+      "salon_rewards_v2_readme_codeblock_1",
+      "salon_rewards_v2_readme_deploy_on_vercel",
+      "salon_rewards_v2_readme_getting_started",
+      "salon_rewards_v2_readme_learn_more"
+    ],
+    "19": [
+      "agents_workflows_graphify_md",
+      "workflows_graphify_codeblock_1",
+      "workflows_graphify_graphify",
+      "workflows_graphify_usage"
+    ],
+    "20": [
+      "agents_rules_build_discipline_md",
+      "rules_build_discipline_project_rule"
+    ],
+    "21": [
+      "app_page_home",
+      "app_page_tsx"
+    ],
+    "22": [
+      "comp_button",
+      "doc_design_guide"
+    ],
+    "23": [
+      "postcss_config_mjs",
+      "salon_rewards_v2_postcss_config_config"
+    ],
+    "24": [
+      "agents_md",
+      "salon_rewards_v2_agents_this_is_not_the_next_js_you_know"
+    ],
+    "25": [
+      "next_env_d_ts"
+    ],
+    "26": [
+      "next_config_ts"
+    ],
+    "27": [
+      "claude_md"
+    ],
+    "28": [
+      "agents_rules_prototype_mode_md"
+    ],
+    "29": [
+      "agents_rules_safe_incremental_delivery_md"
+    ],
+    "30": [
+      "agents_workflows_audit_md"
+    ],
+    "31": [
+      "agents_workflows_build_component_md"
+    ],
+    "32": [
+      "agents_workflows_build_flow_md"
+    ],
+    "33": [
+      "agents_workflows_build_screen_md"
+    ],
+    "34": [
+      "agents_workflows_build_state_md"
+    ],
+    "35": [
+      "agents_workflows_edit_screen_md"
+    ],
+    "36": [
+      "agents_workflows_fix_ui_md"
+    ],
+    "37": [
+      "agents_workflows_generate_pr_md"
+    ],
+    "38": [
+      "agents_workflows_run_md"
+    ],
+    "39": [
+      "doc_build_rules"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07142857142857142,
+    "1": 0.07692307692307693,
+    "2": 0.07692307692307693,
+    "3": 0.07692307692307693,
+    "4": 0.08,
+    "5": 0.08,
+    "6": 0.09523809523809523,
+    "7": 0.1,
+    "8": 0.10526315789473684,
+    "9": 0.125,
+    "10": 0.15384615384615385,
+    "11": 0.15384615384615385,
+    "12": 0.18181818181818182,
+    "13": 0.2909090909090909,
+    "14": 0.18181818181818182,
+    "15": 0.26666666666666666,
+    "16": 0.25,
+    "17": 0.3333333333333333,
+    "18": 0.4,
+    "19": 0.5,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0
+  },
+  "gods": [
+    {
+      "id": "salon_rewards_v2_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "docs_01_product_brief_product_brief",
+      "label": "Product Brief",
+      "degree": 12
+    },
+    {
+      "id": "graphify_graphify",
+      "label": "Graphify Workflow",
+      "degree": 7
+    },
+    {
+      "id": "workflows_plan_purpose",
+      "label": "Purpose",
+      "degree": 6
+    },
+    {
+      "id": "page_login",
+      "label": "Login Page",
+      "degree": 6
+    },
+    {
+      "id": "page_setup",
+      "label": "Setup Page",
+      "degree": 6
+    },
+    {
+      "id": "salon_rewards_v2_package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "visit_billingstep_billingstep",
+      "label": "BillingStep()",
+      "degree": 5
+    },
+    {
+      "id": "visit_servicesstep_servicesstep",
+      "label": "ServicesStep()",
+      "degree": 5
+    },
+    {
+      "id": "visit_customerstep_customerstep",
+      "label": "CustomerStep()",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Login Page",
+      "target": "Product Requirements Document (PRD)",
+      "source_files": [
+        "app/login/page.tsx",
+        "docs/02_prd.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code); connects across different repos/directories"
+    },
+    {
+      "source": "Setup Page",
+      "target": "Product Requirements Document (PRD)",
+      "source_files": [
+        "app/setup/page.tsx",
+        "docs/02_prd.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code); connects across different repos/directories"
+    },
+    {
+      "source": "Login Page",
+      "target": "UI/UX Specification",
+      "source_files": [
+        "app/login/page.tsx",
+        "docs/03_ui_spec.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code); connects across different repos/directories"
+    },
+    {
+      "source": "Setup Page",
+      "target": "UI/UX Specification",
+      "source_files": [
+        "app/setup/page.tsx",
+        "docs/03_ui_spec.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code); connects across different repos/directories"
+    },
+    {
+      "source": "Button Component",
+      "target": "Premium Design System Guide",
+      "source_files": [
+        "components/login/Button.tsx",
+        "docs/design.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code); connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 1002,
+    "output": 1516
+  }
+}
