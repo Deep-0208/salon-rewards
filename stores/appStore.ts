@@ -274,9 +274,9 @@ const MOCK_TRANSACTIONS: Transaction[] = [
 // ── Store ──
 
 export const useAppStore = create<AppState>((set, get) => ({
-  // Auth — start logged in + setup complete for prototype demo
-  isLoggedIn: true,
-  isSetupComplete: true,
+  // Auth — start unauthenticated so login → OTP → setup flow runs correctly
+  isLoggedIn: false,
+  isSetupComplete: false,
   ownerPhone: "",
 
   // Shop Config
